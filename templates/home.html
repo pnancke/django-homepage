@@ -1,14 +1,7 @@
-{% load staticfiles %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Website</title>
-    <link rel="stylesheet" href="{% static 'site.css' %}" type="text/css">
-</head>
-<body>
-<h1>Website</h1>
-<p>This website is coded with django!</p>
+{% extends "base.html" %}
+{% block title %}Home Portal{% endblock %}
 
-</body>
-</html>
+{% block home_content %}
+    <div id="content"> Home content loaded...</div>
+{% endblock %}
+

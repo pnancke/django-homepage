@@ -1,0 +1,40 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Website</title>
+    <link rel="stylesheet" href="{% static 'site.css' %}" type="text/css">
+</head>
+<body>
+<div id="container">
+    <div class="nagigation">
+        {% block navigation %}
+            <aside>
+                <div class="navigation">
+                    <ul>
+                        <span class="grey, light">{</span>
+                        <br>&nbsp;&nbsp;navigation: <span class="grey, light">[</span>
+                        <li class="navigation"><a class="navigation" href="/">&nbsp;&nbsp;home<span class="grey, light">,</span></a>
+                        </li>
+                        <li class="navigation"><a class="navigation" href="/projects">&nbsp;&nbsp;projects<span
+                                class="grey, light">,</span></a></li>
+                        <li class="navigation"><a class="navigation" href="/blog">&nbsp;&nbsp;blog<span
+                                class="grey, light">,</span></a></li>
+                        <li class="navigation"><a class="navigation" href="/about">&nbsp;&nbsp;about</a></li>
+                        <span class="grey, light">&nbsp;&nbsp;]</span>
+                        <br><span class="grey, light">}</span>
+                    </ul>
+                </div>
+            </aside>
+        {% endblock %}
+    </div>
+
+    <div id="content">
+        {% block home_content %}{% endblock %} {% block projects_content %}{% endblock %}
+        {% block blog_content %}{% endblock %} {% block about_content %}{% endblock %}
+    </div>
+</div>
+</body>
+</html>
+
