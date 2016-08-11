@@ -1,0 +1,35 @@
+body {
+    background-color: #031f28;
+    font-family: "SourceCodePro-Regular", serif;
+    color: #2076c8;
+}
+
+@font-face {
+    font-family: "SourceCodePro-Bold";
+    src: url("/static/fonts/SourceCodePro-Bold.ttf");
+}
+
+@font-face {
+    font-family: "SourceCodePro-Black";
+    src: url("/static/fonts/SourceCodePro-Black.ttf");
+}
+
+@font-face {
+    font-family: "SourceCodePro-ExtraLight";
+    src: url("/static/fonts/SourceCodePro-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: "SourceCodePro-Light";
+    src: url("/static/fonts/SourceCodePro-Light.ttf");
+}
+
+@font-face {
+    font-family: "SourceCodePro-Regular";
+    src: url("/static/fonts/SourceCodePro-Regular.ttf");
+}
+
+@font-face {
+    font-family: "SourceCodePro-Semibold";
+    src: url("/static/fonts/SourceCodePro-Semibold.ttf");
+}
