@@ -14,7 +14,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url
-from client.main_page import index, about, projects, blog
+
+from client.main_page import index, about, projects, blog, user_login, admin_panel, user_logout
 
 urlpatterns = [
     url(r'^$', index),
@@ -22,4 +23,8 @@ urlpatterns = [
     url(r'^projects/$', projects),
     url(r'^blog/$', blog),
     url(r'^about/$', about),
+    url(r'^admin/$', admin_panel),
+    url(r'^login/$', user_login),
+    url(r'^logout/$', user_logout)
+
 ]
